@@ -1,6 +1,6 @@
 <template>
   <div class="container text-center">
-    <img src="../assets/logo2.png">
+    <img src="../assets/logo.png">
     <br><br><br><br>
     <form id="input-form" class="form-horizontal">
       <div class="form-group">
@@ -10,7 +10,7 @@
             id="input-email"
             v-model="email"
             type="text"
-            placeholder="fbm@fbm.com"
+            placeholder="ateliar@ateliar.com"
           />
         </div>
       </div>

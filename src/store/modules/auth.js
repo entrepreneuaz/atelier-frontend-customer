@@ -26,17 +26,21 @@ export default {
   },
 
   actions: {
+    // login({ commit }, payload) {
+    //   backend.post('/accounts/login', {
+    //     email: payload.email,
+    //     password: payload.password,
+    //   }).then((response) => {
+    //     commit('login');
+    //     commit('setToken', response.data.sessionToken);
+    //     payload.router.push('/home/index');
+    //   }).catch((err) => {
+    //     commit('setError', err.response.data.message);
+    //   });
+    // },
     login({ commit }, payload) {
-      backend.post('/accounts/login', {
-        email: payload.email,
-        password: payload.password,
-      }).then((response) => {
-        commit('login');
-        commit('setToken', response.data.sessionToken);
-        payload.router.push('/home/index');
-      }).catch((err) => {
-        commit('setError', err.response.data.message);
-      });
+      commit('login');
+      payload.router.push('/home/index');
     },
   },
 };

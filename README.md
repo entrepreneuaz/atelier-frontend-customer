@@ -1,4 +1,4 @@
-# fbm-stage-frontend-customer
+# atelier-frontend-customer
 
 > A Vue.js project
 
